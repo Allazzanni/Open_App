@@ -7,14 +7,26 @@
 //
 
 import UIKit
+import CoreLocation
+import Combine
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
+    var sink: Set<AnyCancellable> = Set()
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        CLLocationManager.currentLocation.sink(receiveCompletion: { completion in
+                switch completion {
+                case .failure(let err):
+                    print(err)
+                default:
+                    print("Completed")
+                }
+            }, receiveValue: { location in
+                print(location)
+            })
+            .store(in: &sink)
         return true
     }
 

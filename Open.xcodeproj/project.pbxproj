@@ -15,6 +15,16 @@
 		39950C942425BF07006A188D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39950C922425BF07006A188D /* LaunchScreen.storyboard */; };
 		39950C9F2425BF07006A188D /* OpenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39950C9E2425BF07006A188D /* OpenTests.swift */; };
 		39950CAA2425BF07006A188D /* OpenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39950CA92425BF07006A188D /* OpenUITests.swift */; };
+		39950CBA2425BF79006A188D /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39950CB92425BF79006A188D /* Location.swift */; };
+		39950CBC2425C084006A188D /* LocationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39950CBB2425C084006A188D /* LocationCard.swift */; };
+		39950CBE2425C0E7006A188D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39950CBD2425C0E7006A188D /* Card.swift */; };
+		39950CC02425C1A3006A188D /* Swipable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39950CBF2425C1A3006A188D /* Swipable.swift */; };
+		39950CC22425D37E006A188D /* CardSwipeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39950CC12425D37E006A188D /* CardSwipeList.swift */; };
+		39950CC52426AB24006A188D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39950CC42426AB24006A188D /* MapKit.framework */; };
+		39950CC82426AB8D006A188D /* MapKit+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39950CC72426AB8D006A188D /* MapKit+Combine.swift */; };
+		39950CCA2426AC29006A188D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39950CC92426AC29006A188D /* CoreLocation.framework */; };
+		39950CCC2426AC35006A188D /* CoreLocation+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39950CCB2426AC35006A188D /* CoreLocation+Combine.swift */; };
+		39950CCF2426E0B9006A188D /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39950CCE2426E0B9006A188D /* Images.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +59,16 @@
 		39950CA52425BF07006A188D /* OpenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39950CA92425BF07006A188D /* OpenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenUITests.swift; sourceTree = "<group>"; };
 		39950CAB2425BF07006A188D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39950CB92425BF79006A188D /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		39950CBB2425C084006A188D /* LocationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCard.swift; sourceTree = "<group>"; };
+		39950CBD2425C0E7006A188D /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		39950CBF2425C1A3006A188D /* Swipable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swipable.swift; sourceTree = "<group>"; };
+		39950CC12425D37E006A188D /* CardSwipeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSwipeList.swift; sourceTree = "<group>"; };
+		39950CC42426AB24006A188D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		39950CC72426AB8D006A188D /* MapKit+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapKit+Combine.swift"; sourceTree = "<group>"; };
+		39950CC92426AC29006A188D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		39950CCB2426AC35006A188D /* CoreLocation+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreLocation+Combine.swift"; sourceTree = "<group>"; };
+		39950CCE2426E0B9006A188D /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39950CCA2426AC29006A188D /* CoreLocation.framework in Frameworks */,
+				39950CC52426AB24006A188D /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +105,7 @@
 				39950C9D2425BF07006A188D /* OpenTests */,
 				39950CA82425BF07006A188D /* OpenUITests */,
 				39950C852425BEFA006A188D /* Products */,
+				39950CC32426AB24006A188D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +122,12 @@
 		39950C862425BEFA006A188D /* Open */ = {
 			isa = PBXGroup;
 			children = (
+				39950CCD2426E0AA006A188D /* Resources */,
+				39950CC62426AB7B006A188D /* ReactiveMapKit */,
+				39950CB82425BF56006A188D /* Views */,
+				39950CB72425BF4F006A188D /* Data */,
 				39950C872425BEFA006A188D /* AppDelegate.swift */,
 				39950C892425BEFA006A188D /* SceneDelegate.swift */,
-				39950C8B2425BEFA006A188D /* ContentView.swift */,
 				39950C8D2425BF07006A188D /* Assets.xcassets */,
 				39950C922425BF07006A188D /* LaunchScreen.storyboard */,
 				39950C952425BF07006A188D /* Info.plist */,
@@ -134,6 +160,52 @@
 				39950CAB2425BF07006A188D /* Info.plist */,
 			);
 			path = OpenUITests;
+			sourceTree = "<group>";
+		};
+		39950CB72425BF4F006A188D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				39950CB92425BF79006A188D /* Location.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		39950CB82425BF56006A188D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				39950C8B2425BEFA006A188D /* ContentView.swift */,
+				39950CBB2425C084006A188D /* LocationCard.swift */,
+				39950CBD2425C0E7006A188D /* Card.swift */,
+				39950CBF2425C1A3006A188D /* Swipable.swift */,
+				39950CC12425D37E006A188D /* CardSwipeList.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		39950CC32426AB24006A188D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39950CC92426AC29006A188D /* CoreLocation.framework */,
+				39950CC42426AB24006A188D /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		39950CC62426AB7B006A188D /* ReactiveMapKit */ = {
+			isa = PBXGroup;
+			children = (
+				39950CC72426AB8D006A188D /* MapKit+Combine.swift */,
+				39950CCB2426AC35006A188D /* CoreLocation+Combine.swift */,
+			);
+			path = ReactiveMapKit;
+			sourceTree = "<group>";
+		};
+		39950CCD2426E0AA006A188D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				39950CCE2426E0B9006A188D /* Images.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,8 +340,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				39950C882425BEFA006A188D /* AppDelegate.swift in Sources */,
+				39950CC02425C1A3006A188D /* Swipable.swift in Sources */,
+				39950CBE2425C0E7006A188D /* Card.swift in Sources */,
+				39950CCF2426E0B9006A188D /* Images.swift in Sources */,
 				39950C8A2425BEFA006A188D /* SceneDelegate.swift in Sources */,
+				39950CC22425D37E006A188D /* CardSwipeList.swift in Sources */,
+				39950CBA2425BF79006A188D /* Location.swift in Sources */,
+				39950CBC2425C084006A188D /* LocationCard.swift in Sources */,
+				39950CC82426AB8D006A188D /* MapKit+Combine.swift in Sources */,
 				39950C8C2425BEFA006A188D /* ContentView.swift in Sources */,
+				39950CCC2426AC35006A188D /* CoreLocation+Combine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
